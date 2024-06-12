@@ -13,12 +13,12 @@ interface Props {
   uiHighlight?: string;
 }
 
-const BRIGHTNESS = 128 + 32;
+const BRIGHTNESS = 128 + 96;
 const FACTORS = [0.2126, 0.7152, 0.0722];
 const PARTS = [0, 2, 4];
 const VERY_DARK = 16;
 
-const defaultHighlight = '#f19135';
+const defaultHighlight = '#000000';
 
 function getHighlight (uiHighlight: string | undefined): string {
   return (uiHighlight || defaultHighlight);
@@ -72,11 +72,12 @@ export default createGlobalStyle<Props>(({ uiHighlight }: Props) => `
   }
 
   .highlight--before-border:before {
-    border-color: ${getHighlight(uiHighlight)} !important;
+    border-color: rgba(0, 255, 255, 1.0) !important;
   }
 
   .highlight--bg {
-    background: ${getHighlight(uiHighlight)} !important;
+    // background: ${getHighlight(uiHighlight)} !important;
+    background: #000000 !important;
   }
 
   .highlight--bg-contrast {
@@ -138,7 +139,8 @@ export default createGlobalStyle<Props>(({ uiHighlight }: Props) => `
   }
 
   .highlight--color-contrast {
-    color: ${getContrast(uiHighlight)};
+    // color: ${getContrast(uiHighlight)};
+    color: #ffffff;
   }
 
   .highlight--fill {
@@ -164,7 +166,8 @@ export default createGlobalStyle<Props>(({ uiHighlight }: Props) => `
   }
 
   .groupMenu {
-    background: ${getHighlight(uiHighlight)} !important;
+    // background: ${getHighlight(uiHighlight)} !important;
+    background: #000000 !important;
 
     &::before {
       background: ${getMenuHoverContrast(uiHighlight)};
@@ -444,10 +447,10 @@ export default createGlobalStyle<Props>(({ uiHighlight }: Props) => `
 
     &.warning {
       &:before {
-        background: rgba(255, 196, 12, 0.05);
+        background: rgba(0, 255, 255, 0.05);
       }
 
-      border-color: rgba(255, 196, 12, 1);
+      border-color: rgba(0, 255, 255, 1);
     }
   }
 

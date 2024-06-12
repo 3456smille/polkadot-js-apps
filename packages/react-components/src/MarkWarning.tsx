@@ -23,7 +23,7 @@ function MarkWarning ({ children, className = '', content, withIcon = true }: Pr
 
 const StyledArticle = styled.article`
   .ui--Icon {
-    color: rgba(255, 196, 12, 1);
+    color: rgba(0, 255, 255, 1);
     margin-right: 0.5rem;
   }
 `;

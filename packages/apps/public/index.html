@@ -46,18 +46,18 @@
 
       [data-theme="dark"] {
         --bg-identicon-circle: #282829;
-        --bg-input: #38393f;
+        --bg-input: rgba(26, 26, 26, 1.0);
         --bg-input-error: #48393f;
         --bg-inverse: rgba(78, 78, 78, 0.66);
         --bg-menu: #26272c;
-        --bg-page: #26272c;
-        --bg-table: #3b3d3f;
-        --bg-tabs: #38393f;
+        --bg-page: #000000;
+        --bg-table: rgba(26, 26, 26, 1.0);
+        --bg-tabs: rgba(26, 26, 26, 1.0);
         --bg-toggle: #58595f;
         --bg-sidebar: #1a1b20;
         --bg-static-extra: rgba(200, 200, 200, 0.1);
         --border-identicon: transparent;
-        --border-input: rgba(234, 236, 238, .15);
+        --border-input: rgba(0, 255, 255, 0.35);
         --border-table: #343536;
         --border-tabs: #343536;
         --color-bounty-info: #8E8E8E;
@@ -68,7 +68,7 @@
         /* --color-summary: rgba(244, 242, 240, 0.75); */
         /* --color-table-foot: rgba(254, 240, 240, 0.66); */
         /* --color-table-head: rgba(254, 240, 240, 0.8); */
-        --color-text: rgba(244, 242, 240, 0.8);
+        --color-text: rgba(255, 255, 255, 1.0);
         --opacity-gray: 0.1;
       }
 
@@ -123,6 +123,44 @@
         filter: blur(2px);
         opacity: 0.15;
       }
+/*
+      h1, .ui--Button.isBasic:not(.isDisabled):not(.isIcon):not(.isSelected) .ui--Icon {
+        color: rgba(0, 255, 255, 1.0) !important;
+      }
+
+      .ui--Button.isBasic:not(.isDisabled):not(.isIcon):not(.isSelected):not(.isReadOnly) {
+          box-shadow: 0 0 1px rgba(0, 255, 255, 1.0) !important;
+          border: 1px rgba(0, 255, 255, 1.0) inset;
+      }
+
+      img.ui--Dropdown-icon.ui--ChainImg.highlight--bg {
+        background: rgba(0, 255, 255, 1.0) !important;
+        border: black 1px solid;
+      }
+
+      path.highlight--stroke {
+        stroke: rgba(0, 255, 255, 1.0) !important;
+      }
+
+      .groupNetworks .highlight--border, .highlight--before-border:before {
+        border-color: rgba(0, 255, 255, 1.0) !important;
+      }
+
+      .ui.selection.dropdown, .ui.selection.active.dropdown .menu {
+        border-color: rgba(0, 255, 255, 0.35) !important;
+      }
+
+      .ui.selection.dropdown:hover {
+        border-color: rgba(0, 255, 255, 0.35) !important;
+      }
+
+      .ui.selection.dropdown .menu>.item {
+        border-top: 1px solid rgba(229, 231, 235, 0.35) !important;
+      }
+
+      .theme--dark .ui--Tabs .active .tabLinkText::after {
+        background: rgba(0, 255, 255, 1.0) !important;
+      }*/
     </style>
   </head>
   <body>

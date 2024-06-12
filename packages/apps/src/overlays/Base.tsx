@@ -98,10 +98,10 @@ const StyledDiv = styled.div`
 
   &.isInfo {
     &:before {
-      background: rgba(255, 196, 12, 0.05);
+      background: rgba(0, 255, 255, 0.05);
     }
 
-    border-color: rgba(255, 196, 12, 1);
+    border-color: rgba(0, 255, 255, 1);
   }
 
   .content {

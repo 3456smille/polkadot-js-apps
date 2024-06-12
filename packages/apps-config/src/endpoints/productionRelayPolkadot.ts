@@ -925,12 +925,73 @@ export const prodRelayPolkadot: EndpointOption = {
     RadiumBlock: 'wss://polkadot.public.curie.radiumblock.co/ws',
     RockX: 'wss://rockx-dot.w3node.com/polka-public-dot/ws',
     Stakeworld: 'wss://dot-rpc.stakeworld.io',
-    'light client': 'light://substrate-connect/polkadot'
+    'light client': 'light://substrate-connect/polkadot',
   },
   teleport: getTeleports(prodParasPolkadotCommon),
   text: 'Polkadot',
   ui: {
     color: '#e6007a',
+    identityIcon: 'polkadot',
+    logo: chainsPolkadotCircleSVG
+  }
+};
+
+export const cyanParasBasedCommon: EndpointOption[] = [
+  {
+    info: 'BasedAssetHub',
+    isPeopleForIdentity: true,
+    paraId: 1000,
+    providers: {
+      Dwellir: 'wss://asset-hub-polkadot-rpc.dwellir.com',
+      'Dwellir Tunisia': 'wss://statemint-rpc-tn.dwellir.com',
+      IBP1: 'wss://sys.ibp.network/statemint',
+      IBP2: 'wss://sys.dotters.network/statemint',
+      LuckyFriday: 'wss://rpc-asset-hub-polkadot.luckyfriday.io',
+      OnFinality: 'wss://statemint.api.onfinality.io/public-ws',
+      Parity: 'wss://polkadot-asset-hub-rpc.polkadot.io',
+      RadiumBlock: 'wss://statemint.public.curie.radiumblock.co/ws',
+      Stakeworld: 'wss://dot-rpc.stakeworld.io/assethub'
+    },
+    relayName: 'cyan',
+    teleport: [-1],
+    text: 'BrainHub',
+    ui: {
+      color: '#00ffff',
+      logo: nodesAssetHubSVG
+    }
+  },
+];
+
+export const cyanRelayBased: EndpointOption = {
+  dnslink: 'polkadot',
+  genesisHash: POLKADOT_GENESIS,
+  info: 'polkadot',
+  isPeopleForIdentity: true,
+  isRelay: true,
+  linked: [
+    ...cyanParasBasedCommon
+  ],
+  providers: {
+    Allnodes: 'wss://polkadot-rpc.publicnode.com',
+    // 'Geometry Labs': 'wss://polkadot.geometry.io/websockets', // https://github.com/polkadot-js/apps/pull/6746
+    // 'Automata 1RPC': 'wss://1rpc.io/dot',
+    Blockops: 'wss://polkadot-public-rpc.blockops.network/ws', // https://github.com/polkadot-js/apps/issues/9840
+    Dwellir: 'wss://polkadot-rpc.dwellir.com',
+    'Dwellir Tunisia': 'wss://polkadot-rpc-tn.dwellir.com',
+    IBP1: 'wss://rpc.ibp.network/polkadot',
+    IBP2: 'wss://rpc.dotters.network/polkadot',
+    LuckyFriday: 'wss://rpc-polkadot.luckyfriday.io',
+    OnFinality: 'wss://polkadot.api.onfinality.io/public-ws',
+    RadiumBlock: 'wss://polkadot.public.curie.radiumblock.co/ws',
+    RockX: 'wss://rockx-dot.w3node.com/polka-public-dot/ws',
+    Stakeworld: 'wss://dot-rpc.stakeworld.io',
+    'light client': 'light://substrate-connect/polkadot',
+    'Based Cyan': 'wss://cyan.basedaibridge.com/ws'
+  },
+  teleport: getTeleports(cyanParasBasedCommon),
+  text: 'BasedAI Cyan Testnet',
+  ui: {
+    color: '#00ffff',
     identityIcon: 'polkadot',
     logo: chainsPolkadotCircleSVG
   }
