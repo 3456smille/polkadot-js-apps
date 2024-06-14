@@ -29,21 +29,21 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, w
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
-      text: t('rpc.header.polkadot.relay', 'BasedAI & parachains', { ns: 'apps-config' }),
+      text: t('rpc.header.polkadot.relay', 'BasedAI & Brains', { ns: 'apps-config' }),
       textBy: '',
       ui: {},
       value: ''
     },
     ...expandEndpoints(t, [cyanRelayBased], firstOnly, withSort),
-    {
-      isDisabled: false,
-      isHeader: true,
-      isSpaced: true,
-      text: t('rpc.header.polkadot.relay', 'Polkadot & parachains', { ns: 'apps-config' }),
-      textBy: '',
-      ui: {},
-      value: ''
-    },
+    // {
+    //   isDisabled: false,
+    //   isHeader: true,
+    //   isSpaced: true,
+    //   text: t('rpc.header.polkadot.relay', 'Polkadot & parachains', { ns: 'apps-config' }),
+    //   textBy: '',
+    //   ui: {},
+    //   value: ''
+    // },
     // ...expandEndpoints(t, [prodRelayPolkadot], firstOnly, withSort),
     // {
     //   isDisabled: false,

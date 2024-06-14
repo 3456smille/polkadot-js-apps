@@ -938,7 +938,7 @@ export const prodRelayPolkadot: EndpointOption = {
 
 export const cyanParasBasedCommon: EndpointOption[] = [
   {
-    info: 'BasedAssetHub',
+    info: 'BrainHub',
     isPeopleForIdentity: true,
     paraId: 1000,
     providers: {
@@ -963,18 +963,18 @@ export const cyanParasBasedCommon: EndpointOption[] = [
 ];
 
 export const cyanRelayBased: EndpointOption = {
-  dnslink: 'polkadot',
+  dnslink: 'based',
   genesisHash: POLKADOT_GENESIS,
-  info: 'polkadot',
+  info: 'based',
   isPeopleForIdentity: true,
   isRelay: true,
-  linked: [
-    ...cyanParasBasedCommon
-  ],
+  // linked: [
+  //   ...cyanParasBasedCommon
+  // ],
   providers: {
-    'Based Cyan': 'wss://cyan.basedaibridge.com/ws'
+    'BasedAI Cyan Testnet': 'wss://cyan.basedaibridge.com/ws'
   },
-  teleport: getTeleports(cyanParasBasedCommon),
+  // teleport: getTeleports(cyanParasBasedCommon),
   text: 'BasedAI Cyan Testnet',
   ui: {
     color: '#00ffff',
