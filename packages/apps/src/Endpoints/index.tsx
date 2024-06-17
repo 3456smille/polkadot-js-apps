@@ -300,6 +300,7 @@ function Endpoints ({ className = '', offset, onClose }: Props): React.ReactElem
     <StyledSidebar
       buttons={
         <>
+        {false &&
           <Button
             icon='code-fork'
             isDisabled={canLocalFork}
@@ -307,6 +308,7 @@ function Endpoints ({ className = '', offset, onClose }: Props): React.ReactElem
             onClick={_onLocalFork}
             tooltip='fork-locally-btn'
           />
+        }
           <Button
             icon='sync'
             isDisabled={canSwitch}
