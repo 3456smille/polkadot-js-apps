@@ -129,7 +129,7 @@ function Menu ({ className = '' }: Props): React.ReactElement<Props> {
         <div className='menuSection'>
           <ChainInfo />
           <ul className='menuItems'>
-            {visibleGroups.map(({ name, routes }): React.ReactNode => (
+            {visibleGroups.filter(({ name, routes }) => !['governance', 'files', 'developer'].includes(name.toLowerCase())).map(({ name, routes }): React.ReactNode => (
               <Grouping
                 isActive={!!activeRoute && activeRoute.group === name.toLowerCase()}
                 key={name}
