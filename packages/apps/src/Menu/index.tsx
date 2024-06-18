@@ -33,7 +33,7 @@ function createExternals (t: (key: string, optionsOrText?: string | { replace: R
       text: t('nav.github', 'GitHub', { ns: 'apps-routing' })
     },
     {
-      href: 'https://docs.basedlabs.net',
+      href: 'https://docs.basedlabs.net/based-cli-documentation/cs8Tej4WRmZe0K7QqRFH',
       icon: 'book',
       name: 'wiki',
       text: t('nav.wiki', 'Wiki', { ns: 'apps-routing' })
