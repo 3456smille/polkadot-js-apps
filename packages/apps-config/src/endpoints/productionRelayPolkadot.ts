@@ -982,3 +982,20 @@ export const cyanRelayBased: EndpointOption = {
     logo: chainsBasedLogoSVG
   }
 };
+
+export const mainnetRelayBased: EndpointOption = {
+  dnslink: 'based',
+  genesisHash: POLKADOT_GENESIS,
+  info: 'based',
+  isPeopleForIdentity: true,
+  isRelay: true,
+  providers: {
+    'BasedAI Mainnet': 'wss://mainnet.basedaibridge.com/ws'
+  },
+  text: 'BasedAI Mainnet',
+  ui: {
+    color: '#00ffff',
+    identityIcon: 'basedai',
+    logo: chainsBasedLogoSVG
+  }
+};
